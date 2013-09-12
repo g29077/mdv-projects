@@ -42,14 +42,15 @@ var movies = function (watched) {
 
 var collection = function (nom) {
 
-	for (var i = 0; i <= nom; i = i + 1) {
-		
+	for (var i = 0; i <= nom; output2 = i + 1) {
+		var output2;
 		if (i < nom) {
+		
 			
-			
+			return output2;
 			
 		} else {
-			break;
+			return nom - 30;
 		};
 	};
 	
