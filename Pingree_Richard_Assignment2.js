@@ -23,6 +23,7 @@ var myName = function (n) {
 		console.log("No Name Entered");
 };
 
+//While Loop
 var movies = function (watchMovie, nom) {
 	
 	watchMovie = confirm("Have you watch a movie? Ok for yes and Cancel for no.")
@@ -44,6 +45,7 @@ var movies = function (watchMovie, nom) {
 	};
 };
 
+// For Loop
 var collection = function (nom) {
 
 	for (var output2 = 0; output2 <= nom; output2 = output2 + 1) {
@@ -53,6 +55,7 @@ var collection = function (nom) {
 		return output2;
 };
 
+// string 
 var soldOut = function (identity, out) {
 	 var videos = 30
 	output3 = identity + " has sold " + videos + " movies, so now he is " + out;
