@@ -68,7 +68,7 @@ var myCollection = movies(watched, numberOfMovies);
 console.log("It is " + myCollection + " that I have a watched a movie.");
 var sale = collection(myMovies);
 
-console.log("I have sold " + sale + " movies.");
+console.log("I am selling my movies and I have sold " + sale + " of them.");
 
 var info = soldOut(identity, out)
 
