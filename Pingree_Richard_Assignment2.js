@@ -23,16 +23,20 @@ var myName = function (n) {
 		console.log("No Name Entered");
 };
 
-var movies = function (watched) {
+var movies = function (watchMovie, nom) {
 	
-	output1 = watched
+	watchMovie = confirm("Have you watch a movie? Ok for yes and Cancel for no.")
 	
+	output1 = watchMovie
 	
-	while (watched > 0) {
-	
-			if (watched > 0) {
+	while (nom > 0) {
+		
+		 nom--;
+		
+		if (nom > 0) {
 			
 			return output1;
+		
 		} else {
 			break;
 			
@@ -42,18 +46,11 @@ var movies = function (watched) {
 
 var collection = function (nom) {
 
-	for (var i = 0; i <= nom; output2 = i + 1) {
-		var output2;
-		if (i < nom) {
+	for (var output2 = 0; output2 <= nom; output2 = output2 + 1) {
 		
 			
-			return output2;
-			
-		} else {
-			return nom - 30;
-		};
 	};
-	
+		return output2;
 };
 
 var soldOut = function (identity, out) {
@@ -66,10 +63,10 @@ var soldOut = function (identity, out) {
 // Main code/Output
 
 myName(name = prompt("Enter Name Here. i.e Rich"));
-var myCollection = movies(watched = confirm("Have you watch a movie? Ok for yes and Cancel for no."));
+var myCollection = movies(watched, numberOfMovies);
 
 console.log("It is " + myCollection + " that I have a watched a movie.");
-var sale = collection(30);
+var sale = collection(myMovies);
 
 console.log("I have sold " + sale + " movies.");
 
