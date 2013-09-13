@@ -50,9 +50,18 @@ var collection = function (nom) {
 
 	for (var output2 = 0; output2 <= nom; output2 = output2 + 1) {
 		
+		
+		if (output2 < nom) {
 			
+			return output2 + nom;
+			
+		} else {
+			
+			return output2;
+			
+		};
 	};
-		return output2;
+		
 };
 
 // string 
