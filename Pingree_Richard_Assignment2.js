@@ -30,7 +30,7 @@ var movies = function (watchMovie, nom) {
 	
 	output1 = watchMovie
 	
-	while (nom > 0) {
+	while (nom > 0 || output1) {
 		
 		 nom--;
 		
@@ -57,7 +57,7 @@ var collection = function (nom) {
 			
 		} else {
 			
-			return output2;
+			return !output2;
 			
 		};
 	};
