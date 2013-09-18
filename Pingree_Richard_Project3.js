@@ -4,12 +4,50 @@
 // SDI 1309
 // Project 3
 
+//JSON DATA
+
+var jsonData = {
+	"partyGuests" :
+		[
+			{
+				"name" : "Rich",
+				"invite" : "email",
+				"attending" : true
+			},
+			{
+				"name" : "Hutch",
+				"invite" : "email",
+				"attending" : true
+			},
+			{
+				"name" : "Dusty",
+				"invite" : "letter",
+				"attending" : true
+			},
+			{
+				"name" : "Brando",
+				"invite" : "letter",
+				"attending" : false
+			},
+			{
+				"name" : "Angela",
+				"invite" : "email",
+				"attending" : true
+			},
+			{
+				"name" : "Megan",
+				"invite" : "letter",
+				"attending" : true
+			},
+		]
+};
 
 //Variables
 
 var partyType = "pizza party",
-	numberOfPizzas = 4
-	soda = true
+	slicesPerPizza = 8,
+	numberOFPizzas = 4,
+	
 	
 ;	
 
@@ -21,7 +59,7 @@ var pizza = function (order) {
 	
 	if (order === true) {
 		
-		console.log("We are going to order " + numberOfPizzas + " pizzas.");
+		console.log("We are going to have a " + partyType + ".");
 		
 	} else {
 		
@@ -30,6 +68,8 @@ var pizza = function (order) {
 };
 
 
+
 //outputs
 
 pizza(ordering)
+
