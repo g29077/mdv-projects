@@ -53,8 +53,8 @@ var partyType = "pizza party",
 	
 ;	
 
-var ordering = confirm("Do you want to order pizza? Ok for yes or Cancel for no.")
-
+var ordering = confirm("Do you want to order pizza? Ok for yes or Cancel for no.");
+var orderconfirm = confirm("Did you order pizza? Ok for yes or Cancel for no.");
 //functions
 
 var pizza = function (order) {
@@ -67,6 +67,24 @@ var pizza = function (order) {
 		
 		console.log("We are not hungry.");
 	}
+};
+
+var ordered = function (order, placedOrder) {
+	
+	if (order === true && placedOrder === false) {
+		
+		console.log("We did not order pizza.");
+		
+	} else if (order === true && placedOrder === true) {
+		
+		console.log("We did order pizza!");
+		
+	} else {
+		
+		return false;
+		
+	};
+	
 };
 
 var guests = function (nameList) {
@@ -102,3 +120,7 @@ console.log("There were " + listnumber + " people invited to the pizza party.");
 var willNotBe = notAttending(namesArray[3], partyType);
 
 console.log(willNotBe);
+
+var ordcon = ordered(orderconfirm, ordering);
+
+console.log(ordcon)
