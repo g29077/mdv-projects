@@ -82,6 +82,15 @@ var guests = function (nameList) {
 	
 };
 
+var notAttending = function (name, type) {
+	var attend = false
+	attending = "It is " + attend + " that " + name + " is coming to the " + type;
+	
+	return attending	
+	
+};
+
+
 //outputs
 
 pizza(ordering);
@@ -89,3 +98,7 @@ pizza(ordering);
 var listnumber = guests(namesArray);
 
 console.log("There were " + listnumber + " people invited to the pizza party.");
+
+var willNotBe = notAttending(namesArray[3], partyType);
+
+console.log(willNotBe);
