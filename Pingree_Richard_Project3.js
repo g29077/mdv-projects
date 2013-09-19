@@ -46,7 +46,7 @@ var jsonData = {
 
 var partyType = "pizza party",
 	slicesPerPizza = 8,
-	numberOFPizzas = 0,
+	numberOFPizzas = 4,
 	namesArray = ["Rich", "Hutch", "Dusty", "Brando", "Angela"],
 	attendArray = [true, true, true, false, true, true]
 	
@@ -108,6 +108,19 @@ var notAttending = function (name, type) {
 	
 };
 
+var slices = function (pizzas, pieces) {
+	
+	var totalPieces = pizzas * pieces
+	
+	for (var i = 0; i < pizzas; i++) {
+		
+		for (var j = 0; j < totalPieces; j = j + pieces)
+		
+		return totalPieces;
+	};
+		
+		
+};
 
 //outputs
 
@@ -124,3 +137,7 @@ console.log(willNotBe);
 var ordcon = ordered(orderconfirm, ordering);
 
 console.log(ordcon)
+
+var totalSlices = slices(numberOFPizzas, slicesPerPizza);
+
+console.log("There are " + totalSlices + " slices of pizza.");
