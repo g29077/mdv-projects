@@ -46,7 +46,9 @@ var jsonData = {
 
 var partyType = "pizza party",
 	slicesPerPizza = 8,
-	numberOFPizzas = 4,
+	numberOFPizzas = 0,
+	namesArray = ["Rich", "Hutch", "Dusty", "Brando", "Angela"],
+	attendArray = [true, true, true, false, true, true]
 	
 	
 ;	
@@ -67,9 +69,23 @@ var pizza = function (order) {
 	}
 };
 
-
+var guests = function (nameList) {
+	nameList[5] = "Megan";
+	var listLength = nameList.length;
+	
+	for (var i = 0; i <= listLength; i++) {
+		
+		if (i < listLength)
+			console.log(listLength)
+		return listLength;
+	}; 
+	
+};
 
 //outputs
 
-pizza(ordering)
+pizza(ordering);
 
+var listnumber = guests(namesArray);
+
+console.log("There were " + listnumber + " people invited to the pizza party.");
