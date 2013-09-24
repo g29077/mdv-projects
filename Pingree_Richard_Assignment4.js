@@ -5,7 +5,12 @@
 // Project 4
 
 //Variables
-var stringNum = "1981";
+var stringNum = "1981",
+	people = "John,Jack,Simon",
+	separator1 = ",",
+	separator2 = "/"
+
+;
 
 // URL String
 var urlAddress = prompt("Copy and paste web address.", "enter address here.");
@@ -33,6 +38,19 @@ var number = function (sNum) {
 	
 };
 
+//Changing Separators in a string
+
+var changeSeparator = function (names, commas, slashes) {
+	
+	var changedSeparators = names.split(commas).join(slashes);
+	
+	return changedSeparators;
+	
+	
+};
+
+
+
 
 //outputs
 
@@ -47,3 +65,9 @@ console.log(validUrl);
 var numOutput = number(stringNum);
 
 console.log(numOutput);
+
+//Changing Separators Output
+
+var changed = changeSeparator(people, separator1, separator2);
+
+console.log(changed);
