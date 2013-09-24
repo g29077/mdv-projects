@@ -5,6 +5,7 @@
 // Project 4
 
 //Variables
+var stringNum = "1981";
 
 // URL String
 var urlAddress = prompt("Copy and paste web address.", "enter address here.");
