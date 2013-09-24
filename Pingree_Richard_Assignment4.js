@@ -33,7 +33,7 @@ var url = function (address) {
 
 var number = function (sNum) {
 	
-	return parseInt(sNum)
+	return parseInt(sNum);
 	
 	
 };
@@ -42,14 +42,29 @@ var number = function (sNum) {
 
 var changeSeparator = function (names, commas, slashes) {
 	
-	var changedSeparators = names.split(commas).join(slashes);
+	var changedSeparators = names.split(commas);
 	
-	return changedSeparators;
+	return changedSeparators.join(slashes);
 	
 	
 };
 
+//Title-case a Sting
 
+var phrase = prompt("Write a phrase.");
+
+var title = function (words) {
+
+	var eachWord = words.toLowerCase().split(" "); //changes sentence to lower case then split turns string into array
+    for ( var i = 0; i < eachWord.length; i++ ) //counts how many words are in the string
+	{
+		var j = eachWord[i].charAt(0).toUpperCase(); //selects the first letter of each word and capitalizes it
+        eachWord[i] = j + eachWord[i].substring(1); //addes the capitalized first letter to each word
+	};
+
+	return eachWord.join(" ");	// array method join returns all words back into a string
+		
+};
 
 
 //outputs
@@ -71,3 +86,9 @@ console.log(numOutput);
 var changed = changeSeparator(people, separator1, separator2);
 
 console.log(changed);
+
+//Title-case output
+
+var titled = title(phrase);
+
+console.log(titled);
