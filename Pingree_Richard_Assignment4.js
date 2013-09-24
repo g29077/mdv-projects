@@ -23,6 +23,15 @@ var url = function (address) {
 	};
 };
 
+//String to Number
+
+var number = function (sNum) {
+	
+	return parseInt(sNum)
+	
+	
+};
+
 
 //outputs
 
@@ -31,3 +40,9 @@ var url = function (address) {
 var validUrl = url(urlAddress);
 
 console.log(validUrl);
+
+
+//String to number output
+var numOutput = number(stringNum);
+
+console.log(numOutput);
