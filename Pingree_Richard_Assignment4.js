@@ -66,6 +66,24 @@ var title = function (words) {
 		
 };
 
+//Phone number function
+
+var phoneNumber = function (ctn) {
+	
+	var dash = ctn.indexOf("-");
+	
+	if (isNaN(ctn.substring(0, 2) && ctn.substring(4, 6) && ctn.substring(8, 11))) {
+		
+		return false;
+	} else if (ctn.length == 12 && ctn.substring(0, dash) && ctn.substring(4, dash)) {
+		
+		return true;
+		
+	} else {
+		return false;
+	};
+};
+
 
 //outputs
 
@@ -92,3 +110,9 @@ console.log(changed);
 var titled = title(phrase);
 
 console.log(titled);
+
+//Phone number output
+
+var checkNumber = phoneNumber("555-555-5565");
+
+console.log(checkNumber);
