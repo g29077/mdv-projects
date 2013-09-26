@@ -86,7 +86,6 @@ var phoneNumber = function (ctn) {
 };
 
 // Email format
-var address = "name@domain.com"
 
 var emailAddress = function (email) {
 	var period = email.length - 4;
