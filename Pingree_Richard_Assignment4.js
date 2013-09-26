@@ -8,8 +8,8 @@
 var stringNum = "1981",
 	people = "John,Jack,Simon",
 	separator1 = ",",
-	separator2 = "/"
-
+	separator2 = "/",
+	address = "name@domain.com"
 ;
 
 // URL String
@@ -84,6 +84,22 @@ var phoneNumber = function (ctn) {
 	};
 };
 
+// Email format
+var address = "name@domain.com"
+
+var emailAddress = function (email) {
+	var period = email.length - 4;
+	
+	if (email.contains("@") && email.charAt(period) == "." ) {
+		
+		return true;
+		
+	} else {
+		
+		return false;
+	};
+};
+
 
 //outputs
 
@@ -91,7 +107,7 @@ var phoneNumber = function (ctn) {
 
 var validUrl = url(urlAddress);
 
-console.log(validUrl);
+console.log("Is the URL valid?" + validUrl);
 
 
 //String to number output
@@ -103,7 +119,7 @@ console.log(numOutput);
 
 var changed = changeSeparator(people, separator1, separator2);
 
-console.log(changed);
+console.log(people + " had been changed to " + changed);
 
 //Title-case output
 
@@ -115,4 +131,8 @@ console.log(titled);
 
 var checkNumber = phoneNumber("555-555-5565");
 
-console.log(checkNumber);
+console.log("Does the number have a phone number pattern? " + checkNumber);
+
+//Email format Output
+
+console.log("Is the address formated as an email address? " + emailAddress(address));
