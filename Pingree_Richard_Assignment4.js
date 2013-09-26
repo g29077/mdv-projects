@@ -107,7 +107,7 @@ var emailAddress = function (email) {
 
 var validUrl = url(urlAddress);
 
-console.log("Is the URL valid?" + validUrl);
+console.log("Is the URL valid? " + validUrl);
 
 
 //String to number output
