@@ -9,7 +9,8 @@ var stringNum = "1981",
 	people = "John,Jack,Simon",
 	separator1 = ",",
 	separator2 = "/",
-	address = "name@domain.com"
+	address = "name@domain.com",
+	telephone = "555-555-5555"
 ;
 
 // URL String
@@ -129,7 +130,7 @@ console.log(titled);
 
 //Phone number output
 
-var checkNumber = phoneNumber("555-555-5565");
+var checkNumber = phoneNumber(telephone);
 
 console.log("Does the number have a phone number pattern? " + checkNumber);
 
